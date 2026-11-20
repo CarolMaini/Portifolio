@@ -51,7 +51,7 @@ main {
 .cabecalho-navegacao {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 40px;
 }
 
 a.nav-link {
@@ -59,7 +59,7 @@ a.nav-link {
     padding: 8px 0 !important;
     margin: 0 !important;
     color: var(--text) !important;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     transition: color .25s ease;
 }
@@ -267,7 +267,7 @@ footer {
     }
 
     .cabecalho-navegacao {
-        gap: 18px;
+        gap: 24px;
     }
 
     #sobre-mim {
@@ -313,11 +313,11 @@ footer {
     }
 
     .cabecalho-navegacao {
-        gap: 14px;
+        gap: 18px;
     }
 
     a.nav-link {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .space-nav-bar {
