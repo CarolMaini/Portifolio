@@ -448,3 +448,31 @@ body { font-size: 17px; }
  .orbit-a { width:330px; height:250px; }
  .orbit-b { width:360px; height:290px; }
 }
+
+
+/* Mobile menu button: align with navy-blue portfolio palette */
+@media (max-width: 760px) {
+  .menu-toggle {
+    color: #8295ff !important;
+    background: rgba(17, 17, 132, .22);
+    border: 1px solid rgba(130, 149, 255, .42);
+    border-radius: 12px;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    font-size: 27px;
+    line-height: 1;
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
+  }
+  .menu-toggle i {
+    color: #8295ff !important;
+    line-height: 1;
+  }
+  .menu-toggle:active,
+  .menu-toggle:hover {
+    color: #c5ccff !important;
+    background: rgba(17, 17, 132, .42);
+    border-color: rgba(130, 149, 255, .75);
+  }
+}
