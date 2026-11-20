@@ -1,127 +1,197 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Carolina Maini — desenvolvedora de software com foco em Python, back-end e desenvolvimento full stack.">
+  <meta name="theme-color" content="#03040b">
+  <title>Carolina Maini | Desenvolvedora de Software</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-  <link rel="stylesheet" href="./reset.css">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="./style.css?v=2">
-  <title>Portifolio</title>
+  <link rel="stylesheet" href="./style.css?v=3">
 </head>
-
 <body>
-  <!-- Inicio Nav -->
-  <header class="navegacao">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid d-flex justify-content-sm-end">
-        <div class="cabecalho-navegacao d-flex justify-content-between">
-          <a class="nav-link" aria-current="page" href="#sobre-mim" style="text-wrap: nowrap">Sobre Mim</a>
-          <a class="nav-link" href="#projetos">Projetos</a>
-          <a class="nav-link" href="#Contato" aria-disabled="true">Contato</a>
-        </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Carolina Maini — início"><span class="brand-mark">C</span><span>carolina<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+      <div class="nav-links">
+        <a href="#inicio" class="active">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#servicos">Atuação</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#depoimentos">Colaboração</a>
+        <a href="#contato" class="nav-contact">Contato <i class="bi bi-arrow-up-right"></i></a>
       </div>
     </nav>
   </header>
-  <!-- Fim Nav -->
 
-  <div class="space-nav-bar" style="height: 70px;"></div>
-
-  <!-- Inicio Sobre Mim -->
-  <main class="mt-5 px-5">
-    <section id="sobre-mim" class="sobre-mim d-flex">
-      <div class="d-md-flex flex-md-reverse">
-        <div class="img-perfil d-flex justify-content-center">
-          <img src="capa-removebg.png" alt="">
-        </div>
-        <div class="nav-descri mt-3">
-          <h1>Carolina Maini</h1>
-          <p class="develouper ">&lt;Developer&#62;</p>
-          <p class="descricao">Olá, me chamo Carolina. Sou
-            Programadora, aqui você irá saber
-            sobre meus trabalhos, projetos e contato.</p>
-        </div>
-      </div>
-    </section>
-    <!-- Fim Sobre Mim -->
-
-
-    <!-- Inicio Meus Projetos -->
-    <section id="projetos" class="meus-projetos">
-      <h2 class="titulo">Meus Projetos</h2>
-
-      <div class="card-projetos">
-        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="false">
-          <div class="carousel-inner" style="max-width: 300px;">
-            <div class="carousel-item active">
-              <img href="https://carolmaini.github.io/Flexbox-Grid/" src="job01.png" class="d-block mw-100 w-100" alt="...">
-              
-            </div>
-            <link rel="stylesheet" href="https://carolmaini.github.io/Flexbox-Grid/">
-            <div class="carousel-item">
-              <a href="https://carolmaini.github.io/Flexbox-Grid/">
-              <img src="job02.png" class="d-block mw-100 w-100" alt="..."></a>
-            </div>
-            <div class="carousel-item">
-              <img src="job03.png" class="d-block w-100" alt="...">
-            </div>
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> PORTFÓLIO • DESENVOLVIMENTO DE SOFTWARE</p>
+          <p class="hero-intro">Olá, eu sou</p>
+          <h1>Carolina<br><span>Maini</span><b class="accent-dot">.</b></h1>
+          <h2>Desenvolvedora de Software <span>|</span> Back-end Python &amp; Full Stack</h2>
+          <p class="hero-description">Transformo ideias em soluções digitais. Gosto de construir aplicações, explorar tecnologias e aprender criando projetos que resolvem problemas reais.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Explorar projetos <i class="bi bi-arrow-up-right"></i></a>
+            <a class="button button-ghost" href="#contato">Vamos conversar <i class="bi bi-chat-dots"></i></a>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" style="background-color: #ad6b6b!important; border-radius: 4px;" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" style="background-color: #ad6b6b!important; border-radius: 4px;" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="hero-socials" aria-label="Redes profissionais">
+            <a href="https://github.com/CarolMaini" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/carol-maini/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.behance.net/carol-maini" target="_blank" rel="noopener" aria-label="Behance"><i class="bi bi-behance"></i></a>
+            <a href="mailto:carolmainioficial@gmail.com" aria-label="E-mail"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="portrait-frame"><img src="./capa-removebg.png" alt="Retrato de Carolina Maini"></div>
+          <div class="floating-card card-code"><i class="bi bi-code-slash"></i><span><strong>Code</strong><small>create • test • improve</small></span></div>
+          <div class="floating-card card-python"><i class="bi bi-braces"></i><span><strong>Python</strong><small>Back-end</small></span></div>
+          <div class="hero-index">01 <span>/</span> 07</div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#sobre"><span></span> ROLE PARA EXPLORAR</a>
+    </section>
+
+    <section class="about section" id="sobre">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">01 — QUEM SOU</p><h2>Sobre <span>mim</span></h2></div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="lead">Tecnologia, curiosidade e construção de soluções.</p>
+            <p>Sou Carolina Maini, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedora de software em formação contínua. Tenho interesse especial por desenvolvimento back-end com Python, APIs e aplicações web.</p>
+            <p>Minha trajetória combina prática em projetos, estudos e experiências com criação digital. Acredito em aprender fazendo: entender o problema, organizar a solução, desenvolver, testar e evoluir o código.</p>
+            <a class="text-link" href="https://www.linkedin.com/in/carol-maini/" target="_blank" rel="noopener">Conheça minha trajetória <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+          <div class="about-panel">
+            <div class="about-stat"><span class="stat-icon"><i class="bi bi-mortarboard"></i></span><div><strong>Formação atual</strong><p>Análise e Desenvolvimento de Sistemas</p></div></div>
+            <div class="about-stat"><span class="stat-icon"><i class="bi bi-terminal"></i></span><div><strong>Foco técnico</strong><p>Python • Back-end • Full Stack</p></div></div>
+            <div class="about-stat"><span class="stat-icon"><i class="bi bi-lightbulb"></i></span><div><strong>Meu jeito de trabalhar</strong><p>Aprendizado contínuo e projetos práticos</p></div></div>
+            <div class="about-note"><i class="bi bi-quote"></i><span>Construir, testar, aprender e melhorar — uma etapa de cada vez.</span></div>
+          </div>
         </div>
       </div>
     </section>
 
+    <section class="skills section" id="habilidades">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">02 — STACK &amp; FERRAMENTAS</p><h2>Habilidades e <span>tecnologias</span></h2><p class="section-subtitle">Ferramentas que estudo e utilizo nos meus projetos.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-card-top"><i class="bi bi-braces"></i><span>01</span></div><h3>Linguagens</h3><div class="tags"><span>Python</span><span>JavaScript</span><span>Java</span><span>HTML5</span><span>CSS3</span></div></article>
+          <article class="skill-card"><div class="skill-card-top"><i class="bi bi-server"></i><span>02</span></div><h3>Back-end</h3><div class="tags"><span>Django</span><span>Django REST Framework</span><span>APIs REST</span></div></article>
+          <article class="skill-card"><div class="skill-card-top"><i class="bi bi-git"></i><span>03</span></div><h3>Ferramentas</h3><div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>PostgreSQL</span></div></article>
+          <article class="skill-card"><div class="skill-card-top"><i class="bi bi-palette"></i><span>04</span></div><h3>Criação digital</h3><div class="tags"><span>WordPress</span><span>Inkscape</span><span>Design digital</span><span>SEO</span></div></article>
+        </div>
+        <div class="learning-strip"><i class="bi bi-activity"></i><span><strong>Sempre aprendendo:</strong> aprofundando fundamentos de desenvolvimento, arquitetura de aplicações e boas práticas.</span></div>
+      </div>
+    </section>
 
-    <!-- Inicio contato -->
-    <section id="Contato">
-      <h2 class="titulo">Contato</h2>
-      <div class="contato">
-        <div class="redes-social mx-auto">
-          <ul class="d-flex gap-4 justify-content-center px-0">
-            <li><a class="icon" href="mailto:carolflowermaini@gmail.com? subject=subject text"><i class="bi bi-envelope-fill"></i></a></li>
-            <li><a class="icon" href="https://github.com/CarolMaini?" target="_blank"><i class="bi bi-github"></i></a> </li>
-            <li><a class="icon" href="https://w.app/port" target="_blank"><i class="bi bi-whatsapp"></i></a> </li>
-            <li><a class="icon" href="https://www.linkedin.com/in/carol-maini-400316214/" target="_blank"><i class="bi bi-linkedin"></i></a> </li>
-            <li><a class="icon" href="#"><i class="bi bi-share-fill"></i></a> </li>
-          </ul>
-          <span class="midias-sociais">Entre em contato em minhas midías e rede socias
-            para conhecer meu trabalho e solicitar um orçamento</span>
+    <section class="services section" id="servicos">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">03 — NO QUE POSSO CONTRIBUIR</p><h2>Áreas de <span>atuação</span></h2><p class="section-subtitle">Frentes que fazem parte dos meus estudos e experiências práticas.</p></div>
+        <div class="services-grid">
+          <article class="service-card"><span class="service-number">01</span><div class="service-icon"><i class="bi bi-hdd-stack"></i></div><h3>Desenvolvimento back-end</h3><p>Construção da lógica de aplicações, organização de dados e desenvolvimento com Python.</p><span class="service-line"></span></article>
+          <article class="service-card"><span class="service-number">02</span><div class="service-icon"><i class="bi bi-diagram-3"></i></div><h3>APIs e integrações</h3><p>Estudo e prática com APIs REST, Django REST Framework e comunicação entre sistemas.</p><span class="service-line"></span></article>
+          <article class="service-card"><span class="service-number">03</span><div class="service-icon"><i class="bi bi-window"></i></div><h3>Desenvolvimento web</h3><p>Interfaces responsivas com HTML, CSS e JavaScript, conectando experiência e funcionalidade.</p><span class="service-line"></span></article>
+          <article class="service-card"><span class="service-number">04</span><div class="service-icon"><i class="bi bi-controller"></i></div><h3>Projetos criativos</h3><p>Exploração de desenvolvimento de jogos e criação de recursos visuais para experiências digitais.</p><span class="service-line"></span></article>
         </div>
       </div>
     </section>
-    </div>
+
+    <section class="projects section" id="projetos">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">04 — TRABALHOS SELECIONADOS</p><h2>Projetos <span>recentes</span></h2><p class="section-subtitle">Um pouco do que venho construindo e aprendendo na prática.</p></div>
+        <div class="project-filters" role="group" aria-label="Filtrar projetos">
+          <button class="filter-button active" data-filter="all">Todos</button><button class="filter-button" data-filter="development">Desenvolvimento</button><button class="filter-button" data-filter="study">Estudos</button><button class="filter-button" data-filter="creative">Criação digital</button>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card" data-category="development">
+            <a class="project-image" href="https://github.com/CarolMaini/sistema-tarefas" target="_blank" rel="noopener"><img src="./job01.png" alt="Prévia do projeto Sistema de Tarefas"><span class="project-open"><i class="bi bi-arrow-up-right"></i></span></a>
+            <div class="project-meta"><span>DESENVOLVIMENTO</span><span>01 / 04</span></div><h3>Organizador de Tarefas</h3><p>Projeto de aplicação para organização e gerenciamento de tarefas.</p><a class="project-link" href="https://github.com/CarolMaini/sistema-tarefas" target="_blank" rel="noopener">Ver repositório <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+          <article class="project-card" data-category="development">
+            <a class="project-image" href="https://github.com/CarolMaini" target="_blank" rel="noopener"><img src="./crm.png" alt="Imagem de projeto de sistema e organização"><span class="project-open"><i class="bi bi-arrow-up-right"></i></span></a>
+            <div class="project-meta"><span>DESENVOLVIMENTO</span><span>02 / 04</span></div><h3>Projeto 9Box</h3><p>Experiência prática em funcionalidades de sistema, fluxos e organização de informações.</p><a class="project-link" href="https://github.com/CarolMaini" target="_blank" rel="noopener">Conhecer GitHub <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+          <article class="project-card" data-category="study">
+            <a class="project-image" href="https://github.com/CarolMaini/descomplica-ads-java" target="_blank" rel="noopener"><img src="./job03.png" alt="Prévia de estudos e exercícios de programação"><span class="project-open"><i class="bi bi-arrow-up-right"></i></span></a>
+            <div class="project-meta"><span>ESTUDOS</span><span>03 / 04</span></div><h3>ADS — Java</h3><p>Repositório acadêmico com exercícios e práticas desenvolvidos durante a graduação.</p><a class="project-link" href="https://github.com/CarolMaini/descomplica-ads-java" target="_blank" rel="noopener">Ver repositório <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+          <article class="project-card" data-category="creative">
+            <a class="project-image" href="https://www.behance.net/carol-maini" target="_blank" rel="noopener"><img src="./job04.png" alt="Prévia de trabalho de criação digital"><span class="project-open"><i class="bi bi-arrow-up-right"></i></span></a>
+            <div class="project-meta"><span>CRIAÇÃO DIGITAL</span><span>04 / 04</span></div><h3>Design e recursos visuais</h3><p>Trabalhos gráficos e recursos visuais desenvolvidos para projetos digitais.</p><a class="project-link" href="https://www.behance.net/carol-maini" target="_blank" rel="noopener">Ver Behance <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+        </div>
+        <div class="projects-footer"><a class="button button-ghost" href="https://github.com/CarolMaini" target="_blank" rel="noopener">Ver todos no GitHub <i class="bi bi-github"></i></a></div>
+      </div>
+    </section>
+
+    <section class="collaboration section" id="depoimentos">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">05 — EXPERIÊNCIA EM EQUIPE</p><h2>Colaboração e <span>aprendizado</span></h2><p class="section-subtitle">Acredito que bons produtos nascem da troca de conhecimento e da evolução constante.</p></div>
+        <div class="collab-panel">
+          <div class="collab-quote"><i class="bi bi-people"></i><span>Projetos colaborativos</span></div>
+          <div><h3>Construir em conjunto também faz parte do desenvolvimento.</h3><p>Tenho interesse em colaborar com equipes, compartilhar aprendizados e contribuir com soluções de software. Esta seção será ampliada com experiências e recomendações profissionais verificáveis.</p></div>
+          <a class="text-link" href="https://www.linkedin.com/in/carol-maini/" target="_blank" rel="noopener">Conectar no LinkedIn <i class="bi bi-arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contato">
+      <div class="container contact-grid">
+        <div><p class="eyebrow">06 — VAMOS CONVERSAR</p><h2>Tem uma ideia?<br><span>Vamos construir.</span></h2><p class="contact-copy">Estou aberta a oportunidades na área de desenvolvimento de software, projetos colaborativos e conexões profissionais.</p>
+          <div class="contact-details"><a href="mailto:carolmainioficial@gmail.com"><i class="bi bi-envelope"></i> carolmainioficial@gmail.com</a><a href="https://www.linkedin.com/in/carol-maini/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a><a href="https://github.com/CarolMaini" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a></div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <label for="name">Seu nome</label><input id="name" name="name" type="text" placeholder="Como posso te chamar?" required>
+          <label for="email">Seu e-mail</label><input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+          <label for="message">Mensagem</label><textarea id="message" name="message" rows="4" placeholder="Conte um pouco sobre sua ideia..." required></textarea>
+          <button class="button button-primary" type="submit">Enviar mensagem <i class="bi bi-arrow-up-right"></i></button>
+          <p class="form-note">O botão abrirá seu aplicativo de e-mail para enviar a mensagem.</p>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer class="d-flex justify-content-end" style="color:#d4a7b0;">
-    <a href="#sobre-mim" class="subir m-5"><i
-        class="bi bi-arrow-up-square-fill"></i></a>
-  </footer>
-  <!-- Fim contato -->
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#inicio"><span class="brand-mark">C</span><span>carolina<span class="brand-dot">.</span></span></a><p>© <span id="year"></span> Carolina Maini. Feito com propósito e código.</p><a class="back-top" href="#inicio" aria-label="Voltar ao topo"><i class="bi bi-arrow-up"></i></a></div></footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.innerHTML = open ? '<i class="bi bi-x-lg"></i>' : '<i class="bi bi-list"></i>';
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.innerHTML = '<i class="bi bi-list"></i>';
+    }));
+    document.querySelectorAll('.filter-button').forEach(button => button.addEventListener('click', () => {
+      document.querySelectorAll('.filter-button').forEach(item => item.classList.remove('active'));
+      button.classList.add('active');
+      const filter = button.dataset.filter;
+      document.querySelectorAll('.project-card').forEach(card => {
+        card.hidden = filter !== 'all' && card.dataset.category !== filter;
+      });
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('contact-form').addEventListener('submit', event => {
+      event.preventDefault();
+      const data = new FormData(event.currentTarget);
+      const subject = encodeURIComponent('Contato pelo portfólio — ' + data.get('name'));
+      const body = encodeURIComponent('Nome: ' + data.get('name') + '\nE-mail: ' + data.get('email') + '\n\n' + data.get('message'));
+      window.location.href = 'mailto:carolmainioficial@gmail.com?subject=' + subject + '&body=' + body;
+    });
+  </script>
 </body>
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
 </html>
